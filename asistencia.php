@@ -4,7 +4,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Asistencia — Registro de Asistencia DuocUC</title>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
@@ -605,21 +604,52 @@
           </tr>
         </tbody>
       </table>
-      <a hef=""
       </div>
+      <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleSaveSuccess">Guardar Asistencia</a>
     </div>
 
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Martínez Jara, Lucila</h5>
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Información de Estudiante</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...
+                    <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-4"><img src="/assets/images/placeholder-face-big.png" class="rounded float-left img-fluid" alt="..."></div>
+                          <div class="col-8 ml-auto">
+                              <table class="table table-borderless table-sm text-left">
+                                  <tbody>
+                                      <tr>
+                                          <th scope="row">Nombre</th>
+                                          <td>Andrés Reyes Galgani</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Rut</th>
+                                            <td>16.009.072-3</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">Correo</th>
+                                              <td>an.reyesg@alumnos.duoc.cl</td>
+                                            </tr>
+                                            <hr />
+                                            <tr>
+                                                <th scope="row">Asistencia</th>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                      </div>
+                                                </td>
+                                              </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -638,10 +668,11 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  
+                  <h4>¿Está seguro de guardar la asistencia?</h4>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Guardar Asistencia</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                 </div>
               </div>
             </div>
