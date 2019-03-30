@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/login.css"/>
   </head>
     <body class="text-center">
-      <form class="form-signin">
+      <form class="form-signin" action="/cursos.php">
         <img class="mb-4" src="/assets/images/logoDuoc.svg" alt="" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Por favor, inicie sesión</h1>
         <label for="inputUsername" class="sr-only">Nombre de Usuario</label>
